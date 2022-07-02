@@ -1,0 +1,50 @@
+
+<div class="content">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header"><h5 class="title">Araba Ekle</h5></div>
+            <div class="card-body">          
+    <form [formGroup]="carAddForm" *ngIf="carAddForm">
+        <div class="mb-3"> 
+            <label for="carName">Car</label>
+            <div class="form-group">
+                <input type="text" id="carName" formControlName="carName" class="form-control" placeholder="Name"/>
+            </div>
+        </div>
+        <div class="mb-3"><label for="brandId">Brand</label>
+            <div class="form-group">
+                <input type="number" id="brandId" formControlName="brandId" class="form-control" placeholder="Name"/>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="colorId">Color</label>
+            <div class="form-group">
+                <input type="number" id="colorId" formControlName="colorId" class="form-control" placeholder="Name"/>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="modelYear">Model</label>
+            <div class="form-group">
+                <input type="text" id="modelYear" formControlName="modelYear" class="form-control" placeholder="Year"/>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="dailyPrice">Daily</label>
+            <div class="form-group">
+                <input type="number" id="dailyPrice" formControlName="dailyPrice" class="form-control" placeholder="Price"/>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="description">Description</label>
+            <div class="form-group">
+                <input type="text" id="description" formControlName="description" class="form-control" placeholder="Description"/>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="card-footer">
+    <button class="btn btn-fill btn-primary" (click)="add()">Add</button>
+</div>
+</div>
+</div>
+</div>
